@@ -1,0 +1,60 @@
+:root {
+  --fontColor: #9ea9ba;
+  --backgroundColor: #13171f;
+  --buttonbgColor: #2c384a;
+}
+
+.Section {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  height: 45rem;
+  width: 14rem;
+  position: fixed;
+}
+.Section .SectionDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Section .SectionDiv img {
+  height: 12rem;
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Section .SectionDiv .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 32rem;
+}
+.Section .SectionDiv .buttons .FilterDiv {
+  display: flex;
+  flex-direction: column;
+}
+.Section .SectionDiv .buttons .FilterDiv .SideBtn {
+  margin: 0.5rem;
+  background: var(--buttonbgColor);
+  color: white;
+  height: 2rem;
+  width: 8rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.Section .SectionDiv .buttons .Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Section .SectionDiv .buttons .Login button {
+  background: var(--buttonbgColor);
+  color: white;
+  height: 2rem;
+  width: 8rem;
+  border-radius: 0.5rem;
+  border: none;
+}/*# sourceMappingURL=Sidebar.css.map */
