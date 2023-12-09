@@ -1,1 +1,41 @@
-/*# sourceMappingURL=moviesection.css.map */
+.MovieSection {
+  background: var(--backgroundColor);
+}
+.MovieSection .MovieSectionDiv {
+  padding: 2rem;
+  color: white;
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.MovieSection .MovieSectionDiv .Heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.MovieSection .MovieSectionDiv .GenresList {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+}
+.MovieSection .MovieSectionDiv .GenresList button {
+  margin: 0.3rem;
+  background: black;
+  color: white;
+  border-style: none;
+  height: 2rem;
+  width: 7.3rem;
+  border-radius: 0.5rem;
+}
+.MovieSection .MovieSectionDiv .Movies {
+  padding: 1rem;
+  display: inline-block;
+}
+.MovieSection .MovieSectionDiv .Movies .MovieImg {
+  height: 20rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=Moviesection.css.map */

@@ -1,0 +1,50 @@
+.MovieSection {
+  background: var(--backgroundColor);
+
+  .MovieSectionDiv {
+    padding: 2rem;
+    color: white;
+    // border: 1px solid red;
+    display: inline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .Heading {
+      // margin-top: -1.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .GenresList {
+      // border: 1px solid green;
+      display: inline-block;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 1rem;
+
+      button {
+        margin: 0.3rem;
+        background: black;
+        color: white;
+        border-style: none;
+        height: 2rem;
+        width: 7.3rem;
+        border-radius: 0.5rem;
+      }
+    }
+    .Movies {
+      // border: 1px solid red;
+      padding: 1rem;
+      display: inline-block;
+
+      .MovieImg {
+        height: 20rem;
+        margin: .5rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

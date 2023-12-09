@@ -1,3 +1,29 @@
-h1 {
-  color: red;
+:root {
+  --fontColor: #9ea9ba;
+  --backgroundColor: #13171f;
+  --buttonbgColor: #2c384a;
+}
+
+.section {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  height: 4rem;
+  border: 1px solid yellow;
+
+  .SectionDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .SearchBox {
+      height: 2.5rem;
+      width: 35rem;
+      border-radius: 0.5rem;
+      border-style: none;
+      background: var(--backgroundColor);
+      color: white;
+    }
+  }
 }
