@@ -1,18 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./main.css";
+import "./App.css";
 
-import Sidebar from "../src/Sidebar/Sidebar.jsx";
-import Searchbar from "./Searchbar/searchbar";
-import Moviesection from "./Moviesection/moviesection";
+import Sidebar from "./Sidebar/Sidebar.jsx";
+import Searchbar from "./Searchbar/Searchbar.jsx";
+import Moviesection from "./Moviesection/Moviesection.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <div className="app">
-      <Sidebar />
+      <Sidebar className= "sidebar" />
       <div className="main">
         <Searchbar />
-        <Moviesection />
+        <Moviesection /> 
       </div>
     </div>
   </React.StrictMode>

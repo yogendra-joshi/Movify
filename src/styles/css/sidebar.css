@@ -1,6 +1,6 @@
 :root {
   --fontColor: #9ea9ba;
-  --backgroundColor: #13171f;
+  --backgroun: dColor: #13171f;
   --buttonbgColor: #2c384a;
 }
 
@@ -8,9 +8,6 @@
   padding: 1rem;
   background-color: black;
   color: white;
-  height: 45rem;
-  width: 14rem;
-  border: 1px solid green;
 }
 .Section .SectionDiv {
   display: flex;

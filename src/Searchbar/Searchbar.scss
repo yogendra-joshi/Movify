@@ -4,26 +4,48 @@
   --buttonbgColor: #2c384a;
 }
 
-.section {
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
+section {
   align-items: center;
-  background: black;
-  height: 4rem;
-  border: 1px solid yellow;
-
-  .SectionDiv {
+  .sectionDiv {
+    border: 1px solid red;
+    padding: 2rem;
+    background: black;
+    width: 100wh;
     display: flex;
     justify-content: center;
     align-items: center;
-    .SearchBox {
+
+    input {
       height: 2.5rem;
-      width: 35rem;
+      width: 40rem;
       border-radius: 0.5rem;
       border-style: none;
       background: var(--backgroundColor);
       color: white;
+      padding: 1px;
+    }
+
+    :focus {
+      outline: none;
+      // padding-left: 1rem;
+    }
+    ::placeholder {
+      color: white;
+      // padding: 1rem;
+    }
+  }
+  .moviesList {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+    img {
+      height: 22rem;
+      width: 15rem;
+      margin: 0.8rem;
+      border-radius: 0.5rem;
     }
   }
 }

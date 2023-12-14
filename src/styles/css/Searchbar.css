@@ -4,25 +4,45 @@
   --buttonbgColor: #2c384a;
 }
 
-.section {
+section {
+  align-items: center;
+}
+section .sectionDiv {
+  border: 1px solid red;
   padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: black;
-  height: 4rem;
-  border: 1px solid yellow;
-}
-.section .SectionDiv {
+  width: 100wh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section .SectionDiv .SearchBox {
+section .sectionDiv input {
   height: 2.5rem;
-  width: 35rem;
+  width: 40rem;
   border-radius: 0.5rem;
   border-style: none;
   background: var(--backgroundColor);
   color: white;
+  padding: 1px;
+}
+section .sectionDiv :focus {
+  outline: none;
+}
+section .sectionDiv ::-moz-placeholder {
+  color: white;
+}
+section .sectionDiv ::placeholder {
+  color: white;
+}
+section .moviesList {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+section .moviesList img {
+  height: 22rem;
+  width: 15rem;
+  margin: 0.8rem;
+  border-radius: 0.5rem;
 }/*# sourceMappingURL=Searchbar.css.map */

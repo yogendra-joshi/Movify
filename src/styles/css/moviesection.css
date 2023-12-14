@@ -1,41 +1,33 @@
-.MovieSection {
-  background: var(--backgroundColor);
-}
-.MovieSection .MovieSectionDiv {
-  padding: 2rem;
-  color: white;
-  display: inline;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.MovieSection .MovieSectionDiv .Heading {
+.movieSection {
+  height: 100vh;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.MovieSection .MovieSectionDiv .GenresList {
-  display: inline-block;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 1rem;
-}
-.MovieSection .MovieSectionDiv .GenresList button {
-  margin: 0.3rem;
-  background: black;
+.movieSection .movieGenres .heading {
+  text-align: center;
   color: white;
-  border-style: none;
-  height: 2rem;
-  width: 7.3rem;
-  border-radius: 0.5rem;
 }
-.MovieSection .MovieSectionDiv .Movies {
-  padding: 1rem;
-  display: inline-block;
+.movieSection .movieGenres .genresList {
+  text-align: center;
 }
-.MovieSection .MovieSectionDiv .Movies .MovieImg {
-  height: 20rem;
+.movieSection .movieGenres .genresList button {
   margin: 0.5rem;
+  background: var(--buttonbgColor);
+  color: white;
+  height: 1.8rem;
+  width: 7.5rem;
+  border-radius: 0.7rem;
+  border: none;
+}
+.movieSection .moviesList {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.movieSection .moviesList img {
+  height: 22rem;
+  width: 15rem;
+  margin: 0.8rem;
   border-radius: 0.5rem;
 }/*# sourceMappingURL=Moviesection.css.map */
