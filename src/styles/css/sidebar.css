@@ -5,9 +5,17 @@
 }
 
 .Section {
-  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 12rem;
   background-color: black;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .Section .SectionDiv {
   display: flex;
@@ -41,6 +49,10 @@
   width: 8rem;
   border-radius: 0.5rem;
   border: none;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
 }
 .Section .SectionDiv .buttons .Login {
   display: flex;

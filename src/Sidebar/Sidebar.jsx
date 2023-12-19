@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/css/Sidebar.css";
 import Logo from "../assets/logo.png";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -9,9 +10,15 @@ export default function Sidebar() {
         <img src={Logo} alt="" />
         <div className="buttons">
           <div className="FilterDiv">
-            <button className="SideBtn">Genres</button>
-            <button className="SideBtn">Trending</button>
-            <button className="SideBtn">Upcoming</button>
+            <Link to="/" className="SideBtn">
+              Genres
+            </Link>
+            <Link to="/trending" className="SideBtn">
+              Trending
+            </Link>
+            <Link to={"/upcoming"} className="SideBtn">
+              Upcoming
+            </Link>
             <button className="SideBtn">Favorites</button>
           </div>
           <div className="Login">
@@ -19,6 +26,7 @@ export default function Sidebar() {
           </div>
         </div>
       </div>
+      <Outlet />
     </section>
   );
 }

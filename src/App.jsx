@@ -1,19 +1,21 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import "./App.css";
-
 import Sidebar from "./Sidebar/Sidebar.jsx";
 import Searchbar from "./Searchbar/Searchbar.jsx";
 import Moviesection from "./Moviesection/Moviesection.jsx";
+import { Outlet } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+function App() {
+  return (
     <div className="app">
-      <Sidebar className= "sidebar" />
+      <Sidebar />
       <div className="main">
         <Searchbar />
-        <Moviesection /> 
+        <Moviesection />
+        <Outlet />
       </div>
     </div>
-  </React.StrictMode>
-);
+  );
+}
+
+export default App;

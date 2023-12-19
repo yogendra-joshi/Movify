@@ -1,0 +1,21 @@
+.upcomingMain {
+  display: flex;
+  margin-left: 12rem;
+  height: 100vh;
+}
+.upcomingMain .heading {
+  color: white;
+}
+.upcomingMain .heading .moviesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+}
+.upcomingMain .heading .moviesList img {
+  height: 22rem;
+  width: 15rem;
+  margin: 0.8rem;
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=UpcomingMovies.css.map */

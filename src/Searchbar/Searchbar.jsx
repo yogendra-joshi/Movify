@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/css/Searchbar.css";
+import MoviesCard from "../MoviesCard";
 
 export default function Searchbar() {
   const [query, setQuery] = useState("");
@@ -32,10 +33,9 @@ export default function Searchbar() {
     }
   }, [query]);
 
-  console.log(results);
 
   return (
-    <section>
+    <section className="header">
       <div className="sectionDiv">
         <input
           type="text"
@@ -47,13 +47,7 @@ export default function Searchbar() {
 
       <div className="moviesList">
         {results.map((movie) => (
-          <div key={movie.id}>
-            <img
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-              alt={movie.title}
-            />
-            {/* <p>{movie.title}</p> */}
-          </div>
+          <MoviesCard key={movie.id} movie={movie} />
         ))}
       </div>
     </section>

@@ -8,13 +8,13 @@ section {
   align-items: center;
 }
 section .sectionDiv {
-  border: 1px solid red;
   padding: 2rem;
   background: black;
   width: 100wh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 12rem;
 }
 section .sectionDiv input {
   height: 2.5rem;

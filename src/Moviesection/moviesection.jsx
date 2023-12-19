@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/css/Moviesection.css";
+import "../MoviesCard";
+import MoviesCard from "../MoviesCard";
 
 export default function Moviesection() {
   const [movieList, setMovieList] = useState([]);
@@ -20,14 +22,14 @@ export default function Moviesection() {
       `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&page=${page}`
     );
     const data = await response.json();
-    // setMovieList(data.results);
     setMovieList((prev) => [...prev, ...data.results]);
   };
+  // console.log(movieList);
 
   const handelInfiniteScroll = async () => {
-    console.log("scrollHeight" + document.documentElement.scrollHeight);
-    console.log("innerHeight" + window.innerHeight);
-    console.log("scrollHeight" + document.documentElement.scrollTop);
+    // console.log("scrollHeight" + document.documentElement.scrollHeight);
+    // console.log("innerHeight" + window.innerHeight);
+    // console.log("scrollHeight" + document.documentElement.scrollTop);
     try {
       if (
         window.innerHeight + document.documentElement.scrollTop + 1 >=
@@ -39,11 +41,13 @@ export default function Moviesection() {
       console.log(error);
     }
   };
-  console.log(movieList);
+
+  useEffect(() => {
+    fetchGenres();
+  }, []);
 
   useEffect(() => {
     fetchMovies();
-    fetchGenres();
   }, [page]);
 
   useEffect(() => {
@@ -61,17 +65,9 @@ export default function Moviesection() {
           ))}
         </div>
       </div>
-
       <div className="moviesList">
         {movieList.map((movie) => (
-          <div className="movies" key={movie.id}>
-            <img
-              className="movieImg"
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-              alt={movie.title}
-            />
-            {/* <p>{movie.title}</p> */}
-          </div>
+          <MoviesCard key={movie.id} movie={movie} />
         ))}
       </div>
     </section>

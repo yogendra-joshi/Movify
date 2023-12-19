@@ -1,0 +1,23 @@
+.upcomingMain {
+  display: flex;
+  margin-left: 12rem;
+  height: 100vh;
+
+  .heading {
+    color: white;
+    .moviesList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      flex-grow: 1;
+
+      img {
+        height: 22rem;
+        width: 15rem;
+        margin: 0.8rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
