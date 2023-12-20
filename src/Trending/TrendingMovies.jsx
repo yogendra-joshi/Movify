@@ -47,8 +47,8 @@ function TrendingMovies() {
       <div className="heading">
         <h2>Trending Movies</h2>
         <div className="moviesList">
-          {trendingMovies.map((movie) => (
-            <MoviesCard key={movie.id} movie={movie} />
+          {trendingMovies.map((movie, index) => (
+            <MoviesCard key={`${movie.id}-${index}`} movie={movie} />
           ))}
         </div>
       </div>

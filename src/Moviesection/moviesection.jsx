@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "../styles/css/Moviesection.css";
 import "../MoviesCard/MoviesCard";
 import MoviesCard from "../MoviesCard/MoviesCard";
+import Searchbar from "../Searchbar/Searchbar.jsx";
+import Sidebar from "../Sidebar/Sidebar";
 
 export default function Moviesection() {
   const [movieList, setMovieList] = useState([]);
@@ -66,8 +68,9 @@ export default function Moviesection() {
         </div>
       </div>
       <div className="moviesList">
-        {movieList.map((movie) => (
-          <MoviesCard key={movie.id} movie={movie} />
+        <Sidebar />
+        {movieList.map((movie, index) => (
+          <MoviesCard key={`${movie.id}-${index}`} movie={movie} />
         ))}
       </div>
     </section>

@@ -10,6 +10,7 @@
     // display: inline;
 
     .heading {
+      margin-top: 1px;
       text-align: center;
       color: white;
     }
@@ -31,6 +32,7 @@
   .moviesList {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

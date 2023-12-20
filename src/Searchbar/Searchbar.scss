@@ -6,8 +6,7 @@
 
 section {
   align-items: center;
-  
-  
+
   .sectionDiv {
     padding: 2rem;
     background: black;
@@ -21,27 +20,20 @@ section {
       height: 2.5rem;
       width: 40rem;
       border-radius: 0.5rem;
-      border-style: none;
+      border: 1px solid transparent;
       background: var(--backgroundColor);
       color: white;
-      padding: 1px;
-    }
-
-    :focus {
-      outline: none;
-      // margin-left: 1rem;
-      // padding-left: 1rem; 
-    }
-    ::placeholder {
-      color: white;
-      padding-left: 1rem;
+      padding: 15px;
     }
   }
-  .moviesList {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
+  .SearchSection {
+    .SearchList {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 12rem;
+      padding-top: 1.5rem;
+    }
   }
 }

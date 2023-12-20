@@ -8,7 +8,7 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <div className="app">
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className="main">
         <Searchbar />
         <Moviesection />

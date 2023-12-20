@@ -7,6 +7,7 @@
   margin-left: 12rem;
 }
 .movieSection .movieGenres .heading {
+  margin-top: 1px;
   text-align: center;
   color: white;
 }
@@ -25,5 +26,6 @@
 .movieSection .moviesList {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  flex-direction: row;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=Moviesection.css.map */

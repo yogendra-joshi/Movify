@@ -20,25 +20,16 @@ section .sectionDiv input {
   height: 2.5rem;
   width: 40rem;
   border-radius: 0.5rem;
-  border-style: none;
+  border: 1px solid transparent;
   background: var(--backgroundColor);
   color: white;
-  padding: 1px;
+  padding: 15px;
 }
-section .sectionDiv :focus {
-  outline: none;
-}
-section .sectionDiv ::-moz-placeholder {
-  color: white;
-  padding-left: 1rem;
-}
-section .sectionDiv ::placeholder {
-  color: white;
-  padding-left: 1rem;
-}
-section .moviesList {
+section .SearchSection .SearchList {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: 12rem;
+  padding-top: 1.5rem;
 }/*# sourceMappingURL=Searchbar.css.map */

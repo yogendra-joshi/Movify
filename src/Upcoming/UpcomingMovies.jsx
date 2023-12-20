@@ -10,7 +10,7 @@ export default function UpcomingMovies() {
 
   const fetchMovies = async () => {
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}`
+      `https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&page=${page}`
     );
     const data = await response.json();
     setUpcomingMovies((prev) => [...prev, ...data.results]);
@@ -45,8 +45,8 @@ export default function UpcomingMovies() {
       <div className="heading">
         <h2>Upcoming Movies</h2>
         <div className="moviesList">
-          {upcomingMovies.map((movie) => (
-            <MoviesCard key={movie.id} movie={movie} />
+          {upcomingMovies.map((movie, index) => (
+            <MoviesCard key={`${movie.id}-${index}`} movie={movie} />
           ))}
         </div>
       </div>
