@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/css/TrendingMovies.css";
-import MoviesCard from "../MoviesCard";
+import MoviesCard from "../MoviesCard/MoviesCard";
 import Sidebar from "../Sidebar/Sidebar";
 
 function TrendingMovies() {
@@ -45,13 +45,10 @@ function TrendingMovies() {
     <div className="trendingMain">
       <Sidebar />
       <div className="heading">
-        <h1>Trending Movies</h1>
+        <h2>Trending Movies</h2>
         <div className="moviesList">
           {trendingMovies.map((movie) => (
-            <div className="head">
-              <MoviesCard key={movie.id} movie={movie} />
-              {/* <p>{movie.title}</p> */}
-            </div>
+            <MoviesCard key={movie.id} movie={movie} />
           ))}
         </div>
       </div>

@@ -26,10 +26,4 @@
   display: flex;
   justify-content: center;
   height: 100vh;
-}
-.movieSection .moviesList img {
-  height: 22rem;
-  width: 15rem;
-  margin: 0.8rem;
-  border-radius: 0.5rem;
 }/*# sourceMappingURL=Moviesection.css.map */

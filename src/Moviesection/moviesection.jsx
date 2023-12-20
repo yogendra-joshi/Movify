@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/css/Moviesection.css";
-import "../MoviesCard";
-import MoviesCard from "../MoviesCard";
+import "../MoviesCard/MoviesCard";
+import MoviesCard from "../MoviesCard/MoviesCard";
 
 export default function Moviesection() {
   const [movieList, setMovieList] = useState([]);

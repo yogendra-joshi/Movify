@@ -30,19 +30,15 @@ section .sectionDiv :focus {
 }
 section .sectionDiv ::-moz-placeholder {
   color: white;
+  padding-left: 1rem;
 }
 section .sectionDiv ::placeholder {
   color: white;
+  padding-left: 1rem;
 }
 section .moviesList {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-}
-section .moviesList img {
-  height: 22rem;
-  width: 15rem;
-  margin: 0.8rem;
-  border-radius: 0.5rem;
 }/*# sourceMappingURL=Searchbar.css.map */

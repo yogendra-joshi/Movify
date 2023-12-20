@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/css/UpcomingMovies.css";
 import Sidebar from "../Sidebar/Sidebar";
-import MoviesCard from "../MoviesCard";
+import MoviesCard from "../MoviesCard/MoviesCard";
 
 export default function UpcomingMovies() {
   const [upcomingMovies, setUpcomingMovies] = useState([]);
@@ -43,12 +43,10 @@ export default function UpcomingMovies() {
     <div className="upcomingMain">
       <Sidebar />
       <div className="heading">
-        <h1>Upcoming Movies</h1>
+        <h2>Upcoming Movies</h2>
         <div className="moviesList">
           {upcomingMovies.map((movie) => (
-            <div className="head">
-              <MoviesCard key={movie.id} movie={movie} />
-            </div>
+            <MoviesCard key={movie.id} movie={movie} />
           ))}
         </div>
       </div>

@@ -6,6 +6,8 @@
 
 section {
   align-items: center;
+  
+  
   .sectionDiv {
     padding: 2rem;
     background: black;
@@ -27,11 +29,12 @@ section {
 
     :focus {
       outline: none;
-      // padding-left: 1rem;
+      // margin-left: 1rem;
+      // padding-left: 1rem; 
     }
     ::placeholder {
       color: white;
-      // padding: 1rem;
+      padding-left: 1rem;
     }
   }
   .moviesList {
@@ -40,12 +43,5 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     
-
-    img {
-      height: 22rem;
-      width: 15rem;
-      margin: 0.8rem;
-      border-radius: 0.5rem;
-    }
   }
 }

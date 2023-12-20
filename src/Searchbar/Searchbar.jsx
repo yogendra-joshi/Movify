@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/css/Searchbar.css";
-import MoviesCard from "../MoviesCard";
+import MoviesCard from "../MoviesCard/MoviesCard";
 
 export default function Searchbar() {
   const [query, setQuery] = useState("");

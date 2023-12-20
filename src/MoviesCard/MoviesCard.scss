@@ -1,0 +1,24 @@
+.movie-card {
+  position: relative;
+
+  img {
+    height: 22rem;
+    width: 15rem;
+    margin: 0.8rem;
+    border-radius: 0.5rem;
+  }
+
+  .title-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-left: 1rem;
+  }
+}

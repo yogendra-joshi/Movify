@@ -40,6 +40,8 @@
       .FilterDiv {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        align-items: center;
 
         .SideBtn {
           margin: 0.5rem;
@@ -50,9 +52,10 @@
           border-radius: 0.5rem;
           border: none;
           text-decoration: none;
-          text-align: center;
+          display: flex;
+          justify-content: center;
           align-items: center;
-          text-decoration: none;
+          font-size: small;
         }
       }
       .Login {

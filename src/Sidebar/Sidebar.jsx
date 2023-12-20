@@ -19,7 +19,7 @@ export default function Sidebar() {
             <Link to={"/upcoming"} className="SideBtn">
               Upcoming
             </Link>
-            <button className="SideBtn">Favorites</button>
+            <Link to={"/favoritemovies"} className="SideBtn">Favorites</Link>
           </div>
           <div className="Login">
             <button>Login</button>
